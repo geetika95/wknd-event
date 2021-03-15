@@ -6,11 +6,11 @@
 */
 function SimpleDTO(a) {
   var e = Function.prototype.call.bind(Array.prototype.slice);
-  try {
+  /*try {
     a.debug && console.log("SimpleDTO: Unifying domains " + [document.domain, a.domain].join(", ")), document.domain = a.domain;
   } catch (b) {
     throw "SimpleDTO: Domain unification error, domain: " + a.domain;
-  }
+  }*/
   if ("receive" == a.mode) {
     var c = document.createElement("iframe");
     this.setSource = function(b) {
